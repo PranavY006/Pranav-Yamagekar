@@ -304,7 +304,7 @@ transition: all 0.2s ease-in-out;
 .section-text{
   line-height: 2;
   margin-top: 18px;
-  font-size: 16px;
+  font-size: 20px;
   color: var(--color-text);
 }
 
