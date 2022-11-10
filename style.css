@@ -389,7 +389,7 @@ transition: all 0.2s ease-in-out;
 }
 
 .hero-main-title{
-  font-size: 42px;
+  font-size: 32px;
   color: var(--color-text);
 }
 
@@ -399,7 +399,7 @@ transition: all 0.2s ease-in-out;
 }
 
 .hero-secound-subheading{
-  font-size: 30px;
+  font-size: 24px;
   text-transform: uppercase;
   color: var(--color-text);
 }
@@ -431,7 +431,7 @@ transition: all 0.2s ease-in-out;
   .hero-main{
     bottom: 120px;
   }
-  .hero-second{
+  .hero-secound{
     top: 160px;
   }
   .hero-wrapper{
@@ -443,7 +443,7 @@ transition: all 0.2s ease-in-out;
   .hero-main-description{
     font-size: 18px;
   }
-  .hero-second-subheading{
+  .hero-secound-subheading{
     font-size: 18px;
   }
 }

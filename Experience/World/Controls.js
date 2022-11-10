@@ -84,7 +84,7 @@ export default class Controls {
                 this.room.scale.set(0.2,0.2,0.2)
                 this.rectLight.width = 0.69;
                 this.rectLight.height = 0.96;
-
+                
                 //first section
                 this.firstMoveTimeline = new GSAP.timeline({
                     scrollTrigger: {
@@ -109,7 +109,7 @@ export default class Controls {
                     start: "top top",
                     end: "bottom bottom",
                     scrub: 0.6,
-                    invalidateOnRefresh: true,
+                    //invalidateOnRefresh: true,
                 },
             })
             .to(this.room.position, {

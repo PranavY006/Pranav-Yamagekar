@@ -79,10 +79,11 @@ export default class Preloader extends EventEmitter{
       })
       .to(".arrow-svg-wrapper" , {
         opacity:1,
+        onComplete:resolve,
       }, "same")
       .to(".toggle-bar", {
         opacity:1,
-        onComplete:resolve,
+        
       }, "same")
     })
       
@@ -150,7 +151,7 @@ export default class Preloader extends EventEmitter{
                 ease: "back.out(1.7)",
 
             }, "intro-text")
-            .to(".first-sub .animatedis" , {
+            .to(".hero-secound-subheading .animatedis" , {
                 yPercent: 0,
                 stagger: 0.07,
                 ease: "back.out(1.7)",
@@ -260,6 +261,7 @@ export default class Preloader extends EventEmitter{
         window.removeEventListener("touchmove", this.touchMove);
     }
 async playIntro() {
+    this.scaleFlag = true;
         await this.firstIntro();
         this.moveFlag = true;
         this.scrollOnceEvent = this.onScroll.bind(this);
@@ -271,7 +273,6 @@ async playIntro() {
  }
 async  playSecondIntro(){
         this.moveFlag = false;
-        this.scaleFlag = true;
        await this.secondIntro();
        this.scaleFlag = false;
        this.emit("enablecontrols"); 
